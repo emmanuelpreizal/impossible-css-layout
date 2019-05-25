@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Impossible CSS Layout</title>
+    <style>
+      .wrapper {
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: 1;
+        grid-gap: 20px;
+      }
+
+      .wrapper img {
+        max-width: 100%;
+      }
+
+      @media screen and (min-width: 768px) {
+        .wrapper {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="https://source.unsplash.com/random" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+        iusto consequuntur tempora facilis
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+        iusto consequuntur tempora facilis
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+        iusto consequuntur tempora facilis
+      </p>
+      <img src="https://source.unsplash.com/random" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+        iusto consequuntur tempora facilis
+      </p>
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Atque, officiis repellat!</li>
+        <li>Est, itaque incidunt.</li>
+      </ul>
+      <img src="https://source.unsplash.com/random" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos
+        iusto consequuntur tempora facilis
+      </p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
